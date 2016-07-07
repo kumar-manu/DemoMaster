@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b766dce6-80e4-41e2-9270-cff51acb6187" name="mkumar@DESKTOP-8JETNP9 2016-07-06 16:36:41" runUser="DESKTOP-8JETNP9\mkumar" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="d1a43c42-6d0b-49bc-9a5b-29a00feb633e">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="mkumar_DESKTOP-8JETNP9 2016-07-06 16_36_41" />
+    <Properties />
+  </TestSettings>
+  <Times creation="2016-07-06T16:36:41.3651769+05:30" queuing="2016-07-06T16:36:41.6603582+05:30" start="2016-07-06T16:36:41.7470982+05:30" finish="2016-07-06T16:36:44.5002586+05:30" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LoginTest" storage="seleniumproj.dll" id="81a64502-cf00-45db-c5e0-4671329ecfec">
+      <Execution id="24129c0f-042c-4933-b295-75f6f8ac89c7" />
+      <TestMethod codeBase="C:/Users/mkumar/Documents/Visual Studio 2015/Projects/LearnSelenium/SeleniumProj/bin/Debug/SeleniumProj.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SeleniumProj.Tests.SampleTest, SeleniumProj, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoginTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="81a64502-cf00-45db-c5e0-4671329ecfec" executionId="24129c0f-042c-4933-b295-75f6f8ac89c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="24129c0f-042c-4933-b295-75f6f8ac89c7" testId="81a64502-cf00-45db-c5e0-4671329ecfec" testName="LoginTest" computerName="DESKTOP-8JETNP9" duration="00:00:02.5205173" startTime="2016-07-06T16:36:41.7711633+05:30" endTime="2016-07-06T16:36:44.4501071+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24129c0f-042c-4933-b295-75f6f8ac89c7">
+      <Output>
+        <ErrorInfo>
+          <Message>Initialization method SeleniumProj.Tests.SampleTest.Initialize threw exception. System.NullReferenceException: System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at SeleniumProj.Tests.SampleTest.Initialize() in C:\Users\mkumar\Documents\Visual Studio 2015\Projects\LearnSelenium\SeleniumProj\Tests\SampleTest.cs:line 47
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
