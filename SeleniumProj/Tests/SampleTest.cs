@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-//Manu
+//Manu Kumar
 namespace SeleniumProj.Tests
 {
     [TestClass]
