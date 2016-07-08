@@ -43,7 +43,9 @@ namespace SeleniumProj.Tests
         public void Initialize()
         {
             PropertiesCollection.driver = new ChromeDriver(@"C:\Users\mkumar\Documents\Visual Studio 2015\Projects\LearnSelenium\SeleniumProj\bin\Debug");
-            PropertiesCollection.driver.Navigate().GoToUrl(TestContext.Properties["webAppUrl"].ToString());
+            
+			PropertiesCollection.driver.Navigate().GoToUrl(TestContext.Properties["webAppUrl"].ToString());
+			
 
         }
 
