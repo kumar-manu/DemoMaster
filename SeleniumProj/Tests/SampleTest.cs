@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 //Cpdated
 namespace SeleniumProj.Tests
 {
@@ -42,15 +43,15 @@ namespace SeleniumProj.Tests
         [TestInitialize]
         public void Initialize()
         {
-            PropertiesCollection.driver = new ChromeDriver(@"C:\Users\mkumar\Documents\Visual Studio 2015\Projects\LearnSelenium\SeleniumProj\bin\Debug");
-            
-			PropertiesCollection.driver.Navigate().GoToUrl(TestContext.Properties["webAppUrl"].ToString());
-			
+           PropertiesCollection.driver = new FirefoxDriver();
+           // PropertiesCollection.driver = new ChromeDriver(@"C:\Users\mkumar\Documents\Visual Studio 2015\Projects\LearnSelenium\SeleniumProj\bin\Debug");
+            PropertiesCollection.driver.Navigate().GoToUrl(TestContext.Properties["webAppUrl"].ToString());
 
         }
 
 
         [TestMethod]
+        [TestCategory("mkmskd")]
         public void LoginTest()
         {
             Pages.GmailLoginPage login = new Pages.GmailLoginPage();
