@@ -46,12 +46,13 @@ namespace SeleniumProj.Tests
            PropertiesCollection.driver = new FirefoxDriver();
            // PropertiesCollection.driver = new ChromeDriver(@"C:\Users\mkumar\Documents\Visual Studio 2015\Projects\LearnSelenium\SeleniumProj\bin\Debug");
             PropertiesCollection.driver.Navigate().GoToUrl(TestContext.Properties["webAppUrl"].ToString());
+            //PropertiesCollection.driver.Navigate().GoToUrl("http://yahoo.com");
 
         }
 
 
         [TestMethod]
-        [TestCategory("mkmskd")]
+        [TestCategory("Test")]
         public void LoginTest()
         {
             Pages.GmailLoginPage login = new Pages.GmailLoginPage();
